@@ -11,7 +11,18 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        
+        for (int j = 1; j <= 100; j++)
+        {
+            if(j%3 == 0 && j%5 == 0)
+                NSLog(@"FizzBuzz");
+            else if(j%3 == 0)
+                NSLog(@"Fizz");
+            else if(j%5 == 0)
+                    NSLog(@"Buzz");
+            else
+                NSLog(@"%d",j);
+        }
     }
     return 0;
 }
